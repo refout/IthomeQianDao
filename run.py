@@ -207,6 +207,10 @@ my_list = [
     {
         'username': '用户名',
         'password': '密码',
+    },
+    {
+        'username': '用户名',
+        'password': '密码',
     }
 ]
 for i in my_list:
