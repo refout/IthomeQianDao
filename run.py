@@ -205,19 +205,19 @@ def run(username, password):
 
 my_list = [
     {
-        'username': '用户名',
-        'password': '密码',
+        'username': ENV['USERNAME1'],
+        'password': ENV['PASSWORD1'],
     },
     {
-        'username': '用户名',
-        'password': '密码',
+        'username': ENV['USERNAME2'],
+        'password': ENV['PASSWORD2'],
     }
 ]
 for i in my_list:
-    if 'USERNAME' not in ENV or 'PASSWORD' not in ENV :
-        print("未配置环境变量USERNAME和PASSWORD")
-    else:
-        i['username'] = ENV['USERNAME']
-        i['password'] = ENV['PASSWORD']
-        code = run(i['username'], i['password'])
+    # if 'USERNAME' not in ENV or 'PASSWORD' not in ENV :
+    #     print("未配置环境变量USERNAME和PASSWORD")
+    # else:
+    #     i['username'] = ENV['USERNAME']
+    #     i['password'] = ENV['PASSWORD']
+    code = run(i['username'], i['password'])
     
