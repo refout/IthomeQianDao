@@ -213,7 +213,7 @@ my_list = [
         'password': ENV['PASSWORD2'],
     }
 ]
-print(ENV)
+
 for i in my_list:
     # if 'USERNAME' not in ENV or 'PASSWORD' not in ENV :
     #     print("未配置环境变量USERNAME和PASSWORD")
