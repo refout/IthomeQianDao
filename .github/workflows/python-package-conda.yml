@@ -24,6 +24,8 @@ jobs:
         run: python -m pip install --upgrade requests
       - name: 'Start Sign'
         env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          USERNAME1: ${{ secrets.USERNAME1 }}
+          PASSWORD1: ${{ secrets.PASSWORD1 }}
+          USERNAME2: ${{ secrets.USERNAME2 }}
+          PASSWORD2: ${{ secrets.PASSWORD2 }}
         run: python run.py
